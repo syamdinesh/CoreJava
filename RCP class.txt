@@ -1,0 +1,58 @@
+RAP and RCP training
+
+osgi
+
+modularity in abs.
+equinox is on top of osgi, which loads all the bundels
+
+RCP-- swt, jfaces
+
+
+RAP-- Remote application platform 
+	make the RCP application as web application.
+	RWT--RAP widget toolkit
+	qooxdoo ( which is providing Ajax services)
+	
+	
+micro-services in abs
+
+
+SWT
+	server push or coment --> server will request the client and refresh the page ( RSS script )
+eg;- web sockets
+	client pull-->
+
+1.Layout
+	fill layout
+	form layout	
+	stack layout
+	grid layout
+
+2.Event handling
+	without event handling it doesn't provide you class object.
+	KeyListener
+	
+
+jfaces 
+lazy loading
+
+
+rap.eclipsesource.com
+
+
+
+
+
+
+                                                    JFACES
+													
+
+
+
+
+
+
+
+
+
+
