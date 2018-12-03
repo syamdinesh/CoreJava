@@ -4,4 +4,4 @@ this is another modifiction
 
 this is done after creation of sprint branch
 
-This is modifying onece again after remote configuration to git.
+This is modifying once again after remote configuration to git.
