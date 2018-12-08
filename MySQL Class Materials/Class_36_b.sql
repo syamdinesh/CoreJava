@@ -1,0 +1,11 @@
+select * from #ABC
+
+CREATE TABLE #ABC
+(
+	COL1 INT,
+	COL2 VARCHAR(30),
+	COL3 DATETIME DEFAULT GETDATE()
+)
+GO
+
+select * from ##XYZ
