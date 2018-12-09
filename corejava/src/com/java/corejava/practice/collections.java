@@ -5,4 +5,7 @@ package com.java.corejava.practice;
  */
 public class collections {
 
+	public static void main(String[] args) {
+		System.out.println("this is test class");
+	}
 }
