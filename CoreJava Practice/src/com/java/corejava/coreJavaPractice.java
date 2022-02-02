@@ -3,6 +3,13 @@
  */
 package com.java.corejava;
 
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 /**
  * @author syamd
  *
@@ -48,6 +55,13 @@ public class coreJavaPractice {
 //		System.out.println("Nothing found");
 
 //		LinkedList<Integer> linkedList = (LinkedList<Integer>) Arrays.asList(1, 2, 3, 4, 5);
+
+		Path path = Paths.get("C:\\Users\\syamd\\OneDrive\\Desktop\\NewFile.txt");
+		try (BufferedWriter newBufferedWriter = Files.newBufferedWriter(path, StandardCharsets.UTF_8)) {
+			newBufferedWriter.write("Hello World!");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public static int[] leftArrayRotate(int[] arr, int noOfRotation, int noOfTestCases) {
