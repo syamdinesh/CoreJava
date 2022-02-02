@@ -3,12 +3,8 @@
  */
 package com.java.corejava;
 
-import java.io.BufferedWriter;
+import java.io.File;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 /**
  * @author syamd
@@ -56,9 +52,36 @@ public class coreJavaPractice {
 
 //		LinkedList<Integer> linkedList = (LinkedList<Integer>) Arrays.asList(1, 2, 3, 4, 5);
 
-		Path path = Paths.get("C:\\Users\\syamd\\OneDrive\\Desktop\\NewFile.txt");
-		try (BufferedWriter newBufferedWriter = Files.newBufferedWriter(path, StandardCharsets.UTF_8)) {
-			newBufferedWriter.write("Hello World!");
+//		Path path = Paths.get("C:\\Users\\syamd\\OneDrive\\Desktop\\NewFile.txt");
+//		try (BufferedWriter newBufferedWriter = Files.newBufferedWriter(path, StandardCharsets.UTF_8)) {
+//			newBufferedWriter.write("Hello World!");
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+
+		filePathConstruction();
+
+	}
+
+	// File path Construction
+	public static void filePathConstruction() {
+
+		try {
+			String filename = "newFile.txt";
+			String workingDirectory = System.getProperty("user.dir");
+			String absoluteFilePath = "";
+
+			// absoluteFilePath = workingDirectory + System.getProperty("file.separator") +
+			// filename;
+			absoluteFilePath = workingDirectory + File.separator + filename;
+			System.out.println("Final filepath : " + absoluteFilePath);
+			File file = new File(absoluteFilePath);
+
+			if (file.createNewFile()) {
+				System.out.println("File is created!");
+			} else {
+				System.out.println("File is already existed!");
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
