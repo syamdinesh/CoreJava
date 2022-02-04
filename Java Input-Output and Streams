@@ -1,0 +1,11 @@
+Java input and Output principles
+  Charactestics of Java I/O :
+    1. Read information from various sources- input direction
+    2. Write information to various destinations - output direction
+    3. Information is transferred through a series of interconnected streams (pipes)
+  Streams are catagorized based on:
+     1. The type of data that stream can carry, for eg text or binary.
+     2. Direction of the stream -input/output.
+     3. Type of the source or destination to which the stream is connected.
+     4. Additional features, such as filtering or transfromation of data.
+Note:- Sources and destinations could be Files, Network Sockets, Console, Memory etc.
