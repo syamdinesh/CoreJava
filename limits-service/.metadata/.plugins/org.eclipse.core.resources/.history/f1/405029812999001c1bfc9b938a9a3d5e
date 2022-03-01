@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 package com.first.microservices.project.currency.exchangeservice.bean;
 
 import java.math.BigDecimal;
